@@ -2,17 +2,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://yk6.github.io/categories/</loc>
+      <loc>https://yk6.github.io/2019/line_sticker/</loc>
+      
+      <lastmod>2019-05-22T22:08:41+08:00</lastmod>
       
       
-      
-      <priority>0</priority>
       
       
     </url>
   
     <url>
-      <loc>https://yk6.github.io/tags/</loc>
+      <loc>https://yk6.github.io/posts/</loc>
+      
+      <lastmod>2019-05-22T22:08:41+08:00</lastmod>
       
       
       
@@ -23,6 +25,62 @@
   
     <url>
       <loc>https://yk6.github.io/</loc>
+      
+      <lastmod>2019-05-22T22:08:41+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://yk6.github.io/2019/markdown/</loc>
+      
+      <lastmod>2019-05-22T22:01:30+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://yk6.github.io/about/</loc>
+      
+      <lastmod>2019-05-22T20:55:55+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://yk6.github.io/tags/</loc>
+      
+      <lastmod>2019-05-22T20:55:55+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://yk6.github.io/tags/archive/</loc>
+      
+      <lastmod>2019-05-22T20:55:55+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://yk6.github.io/categories/</loc>
       
       
       

@@ -5,7 +5,86 @@
     <description>Recent content in yk6`s Blog on yk6`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
+    <lastBuildDate>Wed, 22 May 2019 22:08:41 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Line Sticker</title>
+      <link>https://yk6.github.io/2019/line_sticker/</link>
+      <pubDate>Wed, 22 May 2019 22:08:41 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2019/line_sticker/</guid>
+      <description>
+
+&lt;h1 id=&#34;下載line-貼圖&#34;&gt;下載line 貼圖&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sdl-stickershop.line.naver.jp/stickershop/v1/product/[貼圖ID]/iphone/stickers@2x.zip&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://sdl-stickershop.line.naver.jp/stickershop/v1/product/[貼圖ID]/iphone/stickers@2x.zip&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://yk6.github.io/2019/markdown/</link>
+      <pubDate>Wed, 22 May 2019 22:01:30 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2019/markdown/</guid>
+      <description>
+
+&lt;h1 id=&#34;markdown&#34;&gt;markdown&lt;/h1&gt;
+
+&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
+
+&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
+
+&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;this is a quote&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;quote with formatting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;list&lt;/li&gt;
+&lt;li&gt;unordered&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt; &lt;br/&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;more-details&#34;&gt;more details&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://markdown.tw/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://markdown.tw/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://yk6.github.io/about/</link>
+      <pubDate>Wed, 22 May 2019 20:55:55 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;about&#34;&gt;About&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;用來備份資料的實驗性的網頁&#34;&gt;用來備份資料的實驗性的網頁&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt; &lt;em&gt;bold&lt;/em&gt;    &lt;strong&gt;bold&lt;/strong&gt; &lt;br&gt;
+This is a regular paragraph.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Foo&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This is another regular paragraph.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
