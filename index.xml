@@ -5,8 +5,35 @@
     <description>Recent content in yk6`s Blog on yk6`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 22 May 2019 22:28:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 Nov 2019 15:50:12 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Setup SSR</title>
+      <link>https://yk6.github.io/2019/setup/</link>
+      <pubDate>Sat, 09 Nov 2019 15:50:12 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2019/setup/</guid>
+      <description>
+
+&lt;h1 id=&#34;setup-up-gcp&#34;&gt;Setup up gcp&lt;/h1&gt;
+
+&lt;h2 id=&#34;沒特別標明的選擇就是用default&#34;&gt;沒特別標明的選擇就是用default&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;open gcp account&lt;/li&gt;
+&lt;li&gt;在Computer Engine 裡 創一個 &lt;code&gt;VM 執行個體&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;建立VM 執行個體&lt;/li&gt;
+&lt;li&gt;選個地方 (區域: 台灣/香港) &amp;lt;&amp;mdash;- 這是機房的位置 越近越不lag&lt;/li&gt;
+&lt;li&gt;區域的第二個部分是在那個區域的機房位置 (eg 台中 台北)&lt;/li&gt;
+&lt;li&gt;機器選個便宜的 大概選g1就可以 (1 vCPU, 1+ GB RAM)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;開機磁碟&lt;/code&gt;選 &lt;code&gt;Ubuntu 16.04LTS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;管理、安全性、磁碟、網路、單獨租用&lt;/code&gt;裡&lt;code&gt;網路&lt;/code&gt;tab 裡，
+網路介面的&lt;code&gt;外部IP&lt;/code&gt;改成&lt;code&gt;建立IP地址&lt;/code&gt; (這是為了取得靜態IP地址 以後才能一直從這個地址連上SSR)&lt;/li&gt;
+&lt;li&gt;然後 [建立]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugo</title>
@@ -18,14 +45,21 @@
 
 &lt;h1 id=&#34;hugo&#34;&gt;Hugo&lt;/h1&gt;
 
-&lt;p&gt;reference &lt;a href=&#34;https://mogeko.me/2018/018/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://mogeko.me/2018/018/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-to-create-new-page&#34;&gt;how to create new page&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;draft 要改成false才會publish to public&lt;/li&gt;
-&lt;li&gt;每次回到根目錄用 &lt;code&gt;hugo&lt;/code&gt; 來輸出新的靜態頁面到&lt;code&gt;/public&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;code&gt;bash
+$ ~/Desktop/webpg/ hugo new [page_name].md 
+&lt;/code&gt;
 
-&lt;p&gt;字數統計 &lt;a href=&#34;https://mogeko.me/2018/033/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://mogeko.me/2018/033/&lt;/a&gt;&lt;/p&gt;
+
+reference &lt;a href=&#34;https://mogeko.me/2018/018/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://mogeko.me/2018/018/&lt;/a&gt;
+
+-   draft 要改成false才會publish to public
+-   每次回到根目錄用 &lt;code&gt;hugo&lt;/code&gt; 來輸出新的靜態頁面到&lt;code&gt;/public&lt;/code&gt;
+
+字數統計 &lt;a href=&#34;https://mogeko.me/2018/033/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://mogeko.me/2018/033/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -40,6 +74,8 @@
 &lt;h1 id=&#34;下載line-貼圖&#34;&gt;下載line 貼圖&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://sdl-stickershop.line.naver.jp/stickershop/v1/product/[貼圖ID]/iphone/stickers@2x.zip&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://sdl-stickershop.line.naver.jp/stickershop/v1/product/[貼圖ID]/iphone/stickers@2x.zip&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;reference: &lt;a href=&#34;https://veltlion.github.io/line-sticker-download/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://veltlion.github.io/line-sticker-download/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="https://yk6.github.io/2019/markdown/" />
-  <link rel="next" href="https://yk6.github.io/2019/hugo/" />
-  <link rel="canonical" href="https://yk6.github.io/2019/line_sticker/" />
+  <link rel="prev" href="https://yk6.github.io/2019/hugo/" />
+  
+  <link rel="canonical" href="https://yk6.github.io/2019/setup/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Line Sticker | yk6`s Blog
+           Setup SSR | yk6`s Blog
        
   </title>
-  <meta name="title" content="Line Sticker | yk6`s Blog">
+  <meta name="title" content="Setup SSR | yk6`s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/yk6.github.io"
     },
     "articleSection" : "posts",
-    "name" : "Line Sticker",
-    "headline" : "Line Sticker",
-    "description" : "下載line 貼圖 https:\/\/sdl-stickershop.line.naver.jp\/stickershop\/v1\/product\/[",
+    "name" : "Setup SSR",
+    "headline" : "Setup SSR",
+    "description" : "Setup up gcp 沒特別標明的選擇就是用default open gcp account 在Computer Engine 裡 創一個 VM 執行個體 建立VM 執行個體 選個地方 (區域: 台灣\/香港) \x26lt;\x26mdash;- 這是機房",
     "inLanguage" : "zh-tw",
     "author" : "yk6",
     "creator" : "yk6",
@@ -54,10 +54,10 @@
     "accountablePerson" : "yk6",
     "copyrightHolder" : "yk6",
     "copyrightYear" : "2019",
-    "datePublished": "2019-05-22 22:08:41 \x2b0800 \x2b08",
-    "dateModified" : "2019-05-22 22:08:41 \x2b0800 \x2b08",
-    "url" : "https:\/\/yk6.github.io\/2019\/line_sticker\/",
-    "wordCount" : "100",
+    "datePublished": "2019-11-09 15:50:12 \x2b0800 \x2b08",
+    "dateModified" : "2019-11-09 15:50:12 \x2b0800 \x2b08",
+    "url" : "https:\/\/yk6.github.io\/2019\/setup\/",
+    "wordCount" : "211",
     "keywords" : [  "yk6`s Blog"]
 }
 </script>
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Line Sticker</h1>
+        <h1 class="post-title" itemprop="name headline">Setup SSR</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://yk6.github.io" rel="author">yk6</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-05-22 itemprop="datePublished">May 22, 2019</time>
+                on <time datetime=2019-11-09 itemprop="datePublished">November 9, 2019</time>
                 </span>
                 in
                 
@@ -144,11 +144,22 @@
 
           
 
-<h1 id="下載line-貼圖">下載line 貼圖</h1>
+<h1 id="setup-up-gcp">Setup up gcp</h1>
 
-<p><a href="https://sdl-stickershop.line.naver.jp/stickershop/v1/product/[貼圖ID]/iphone/stickers@2x.zip" rel="nofollow noreferrer" target="_blank">https://sdl-stickershop.line.naver.jp/stickershop/v1/product/[貼圖ID]/iphone/stickers@2x.zip</a></p>
+<h2 id="沒特別標明的選擇就是用default">沒特別標明的選擇就是用default</h2>
 
-<p>reference: <a href="https://veltlion.github.io/line-sticker-download/" rel="nofollow noreferrer" target="_blank">https://veltlion.github.io/line-sticker-download/</a></p>
+<ul>
+<li>open gcp account</li>
+<li>在Computer Engine 裡 創一個 <code>VM 執行個體</code></li>
+<li>建立VM 執行個體</li>
+<li>選個地方 (區域: 台灣/香港) &lt;&mdash;- 這是機房的位置 越近越不lag</li>
+<li>區域的第二個部分是在那個區域的機房位置 (eg 台中 台北)</li>
+<li>機器選個便宜的 大概選g1就可以 (1 vCPU, 1+ GB RAM)</li>
+<li><code>開機磁碟</code>選 <code>Ubuntu 16.04LTS</code></li>
+<li>在<code>管理、安全性、磁碟、網路、單獨租用</code>裡<code>網路</code>tab 裡，
+網路介面的<code>外部IP</code>改成<code>建立IP地址</code> (這是為了取得靜態IP地址 以後才能一直從這個地址連上SSR)</li>
+<li>然後 [建立]</li>
+</ul>
 
     </div>
 
@@ -163,7 +174,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://yk6.github.io/2019/line_sticker/>https://yk6.github.io/2019/line_sticker/</span>
+                    <a href=https://yk6.github.io/2019/setup/>https://yk6.github.io/2019/setup/</span>
             </p>
             
              
@@ -184,10 +195,8 @@
 
     <div class="post-nav">
         
-        <a href="https://yk6.github.io/2019/markdown/" class="prev" rel="prev" title="markdown"><i class="iconfont icon-left"></i>&nbsp;markdown</a>
+        <a href="https://yk6.github.io/2019/hugo/" class="prev" rel="prev" title="Hugo"><i class="iconfont icon-left"></i>&nbsp;Hugo</a>
          
-        
-        <a href="https://yk6.github.io/2019/hugo/" class="next" rel="next" title="Hugo">Hugo&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
