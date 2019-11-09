@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Setup SSR",
     "headline" : "Setup SSR",
-    "description" : "Setup up gcp 沒特別標明的選擇就是用default open gcp account 在Computer Engine 裡 創一個 VM 執行個體 建立VM 執行個體 選個地方 (區域: 台灣\/香港) \x26lt;\x26mdash;- 這是機房",
+    "description" : "Setup up gcp 沒特別標明的選項就是用default open gcp account 在Computer Engine 裡 創一個 VM 執行個體 建立VM 執行個體 選個地方 (區域: 台灣\/香港) \x26lt;\x26mdash;- 這是機房",
     "inLanguage" : "zh-tw",
     "author" : "yk6",
     "creator" : "yk6",
@@ -57,8 +57,8 @@
     "datePublished": "2019-11-09 15:50:12 \x2b0800 \x2b08",
     "dateModified" : "2019-11-09 15:50:12 \x2b0800 \x2b08",
     "url" : "https:\/\/yk6.github.io\/2019\/setup\/",
-    "wordCount" : "211",
-    "keywords" : [  "yk6`s Blog"]
+    "wordCount" : "456",
+    "keywords" : [ "gcp", "yk6`s Blog"]
 }
 </script>
 
@@ -130,6 +130,8 @@
         
 
         
+            
+        
 
         
         
@@ -146,7 +148,7 @@
 
 <h1 id="setup-up-gcp">Setup up gcp</h1>
 
-<h2 id="沒特別標明的選擇就是用default">沒特別標明的選擇就是用default</h2>
+<h3 id="沒特別標明的選項就是用default">沒特別標明的選項就是用default</h3>
 
 <ul>
 <li>open gcp account</li>
@@ -157,8 +159,54 @@
 <li>機器選個便宜的 大概選g1就可以 (1 vCPU, 1+ GB RAM)</li>
 <li><code>開機磁碟</code>選 <code>Ubuntu 16.04LTS</code></li>
 <li>在<code>管理、安全性、磁碟、網路、單獨租用</code>裡<code>網路</code>tab 裡，
-網路介面的<code>外部IP</code>改成<code>建立IP地址</code> (這是為了取得靜態IP地址 以後才能一直從這個地址連上SSR)</li>
-<li>然後 [建立]</li>
+<br>網路介面的<code>外部IP</code>改成<code>建立IP地址</code> <br>(這是為了取得靜態IP地址 以後才能一直從這個IP連上SSR)</li>
+<li>然後 <strong>[建立]</strong></li>
+</ul>
+
+<h3 id="setup-vm">Setup VM</h3>
+
+<ul>
+<li>回到 <em>Computer Engine</em> 的 <em>VM 執行個體</em> 裡，開啟你的VM (default name instance1?)</li>
+<li>點 <code>SSH</code>
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/gcp_ssh_pic.jpg" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+<li>接來跑下面的指令，一個一個來 中間可能會要等他跑一下才能打下一個</li>
+</ul>
+
+<pre><code class="language-bash">sudo -i
+apt-get update
+apt-get upgrade
+apt install python-pip
+pip install shadowsocks
+wget https://github.com/hellofwy/ss-bash/archive/master.zip
+apt install unzip
+unzip master.zip
+ls
+# ls can show u the current files and folder in the directory u r in
+cd ss-bash-master
+# cd moves u into a folder or goes up of current directory
+apt install bc
+./ssadmin.sh
+# 看隨便要什麼cmd自己選 
+# 通常要先 add [自選port] [自選流量限制] 然後就可以用了
+# status 看開著還是關了
+# start 啟動 
+# stop 關掉
+</code></pre>
+
+<ul>
+<li>further reading
+<a href="https://github.com/hellofwy/ss-bash/wiki" rel="nofollow noreferrer" target="_blank">https://github.com/hellofwy/ss-bash/wiki</a></li>
+</ul>
+
+<h3 id="setup-firewall">Setup firewall</h3>
+
+<ul>
+<li>在<code>VPC網路</code> 裡的 <code>防火牆規則</code> 加一個新的規則
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/gcp_ip.jpg" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+<li>名字取個allow-ip 比較好懂</li>
+<li><code>目標</code> 選 <code>網路中的所有執行個體</code></li>
+<li><code>來源IP範圍</code> 選 <code>0.0.0.0/0</code></li>
+<li><code>通訊協定和通訊埠</code> 選 <code>全部允許</code></li>
 </ul>
 
     </div>
@@ -186,6 +234,14 @@
 
   
     <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://yk6.github.io/tags/gcp/">
+                    #gcp</a></span>
+            
+            </section>
         
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
@@ -238,8 +294,9 @@
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 

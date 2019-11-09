@@ -18,7 +18,7 @@
 
 &lt;h1 id=&#34;setup-up-gcp&#34;&gt;Setup up gcp&lt;/h1&gt;
 
-&lt;h2 id=&#34;沒特別標明的選擇就是用default&#34;&gt;沒特別標明的選擇就是用default&lt;/h2&gt;
+&lt;h3 id=&#34;沒特別標明的選項就是用default&#34;&gt;沒特別標明的選項就是用default&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;open gcp account&lt;/li&gt;
@@ -29,8 +29,54 @@
 &lt;li&gt;機器選個便宜的 大概選g1就可以 (1 vCPU, 1+ GB RAM)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;開機磁碟&lt;/code&gt;選 &lt;code&gt;Ubuntu 16.04LTS&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;在&lt;code&gt;管理、安全性、磁碟、網路、單獨租用&lt;/code&gt;裡&lt;code&gt;網路&lt;/code&gt;tab 裡，
-網路介面的&lt;code&gt;外部IP&lt;/code&gt;改成&lt;code&gt;建立IP地址&lt;/code&gt; (這是為了取得靜態IP地址 以後才能一直從這個地址連上SSR)&lt;/li&gt;
-&lt;li&gt;然後 [建立]&lt;/li&gt;
+&lt;br&gt;網路介面的&lt;code&gt;外部IP&lt;/code&gt;改成&lt;code&gt;建立IP地址&lt;/code&gt; &lt;br&gt;(這是為了取得靜態IP地址 以後才能一直從這個IP連上SSR)&lt;/li&gt;
+&lt;li&gt;然後 &lt;strong&gt;[建立]&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;setup-vm&#34;&gt;Setup VM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;回到 &lt;em&gt;Computer Engine&lt;/em&gt; 的 &lt;em&gt;VM 執行個體&lt;/em&gt; 裡，開啟你的VM (default name instance1?)&lt;/li&gt;
+&lt;li&gt;點 &lt;code&gt;SSH&lt;/code&gt;
+&lt;img src=&#34;https://yk6.github.io/gcp_ssh_pic.jpg&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;接來跑下面的指令，一個一個來 中間可能會要等他跑一下才能打下一個&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo -i
+apt-get update
+apt-get upgrade
+apt install python-pip
+pip install shadowsocks
+wget https://github.com/hellofwy/ss-bash/archive/master.zip
+apt install unzip
+unzip master.zip
+ls
+# ls can show u the current files and folder in the directory u r in
+cd ss-bash-master
+# cd moves u into a folder or goes up of current directory
+apt install bc
+./ssadmin.sh
+# 看隨便要什麼cmd自己選 
+# 通常要先 add [自選port] [自選流量限制] 然後就可以用了
+# status 看開著還是關了
+# start 啟動 
+# stop 關掉
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;further reading
+&lt;a href=&#34;https://github.com/hellofwy/ss-bash/wiki&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/hellofwy/ss-bash/wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;setup-firewall&#34;&gt;Setup firewall&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在&lt;code&gt;VPC網路&lt;/code&gt; 裡的 &lt;code&gt;防火牆規則&lt;/code&gt; 加一個新的規則
+&lt;img src=&#34;https://yk6.github.io/gcp_ip.jpg&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;名字取個allow-ip 比較好懂&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;目標&lt;/code&gt; 選 &lt;code&gt;網路中的所有執行個體&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;來源IP範圍&lt;/code&gt; 選 &lt;code&gt;0.0.0.0/0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;通訊協定和通訊埠&lt;/code&gt; 選 &lt;code&gt;全部允許&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
