@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>archive on yk6`s Blog</title>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 22 May 2019 20:55:55 +0800</pubDate>
       
       <guid>https://yk6.github.io/about/</guid>
-      <description>About 用來備份資料的實驗性的網頁 bold bold This is a regular paragraph. Foo This is another regular paragraph.</description>
+      <description>About 用來備份資料的實驗性的網頁 bold bold This is a regular paragraph. This is another regular paragraph.</description>
     </item>
     
   </channel>

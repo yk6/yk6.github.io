@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Setup SSR",
     "headline" : "Setup SSR",
-    "description" : "Setup up gcp 沒特別標明的選項就是用default open gcp account 在Computer Engine 裡 創一個 VM 執行個體 建立VM 執行個體 選個地方 (區域: 台灣\/香港) \x26lt;\x26mdash;- 這是機房",
+    "description" : "Setup up gcp 沒特別標明的選項就是用default google gcp open gcp account 去主控台 主控台 在Computer Engine 裡 創一個 VM 執行個體 建立VM 執行個體 選個地方 (區域: 台灣",
     "inLanguage" : "zh-tw",
     "author" : "yk6",
     "creator" : "yk6",
@@ -54,10 +54,10 @@
     "accountablePerson" : "yk6",
     "copyrightHolder" : "yk6",
     "copyrightYear" : "2019",
-    "datePublished": "2019-11-09 15:50:12 \x2b0800 \x2b08",
-    "dateModified" : "2019-11-09 15:50:12 \x2b0800 \x2b08",
+    "datePublished": "2019-11-09 15:50:12 \x2b0800 CST",
+    "dateModified" : "2019-11-09 15:50:12 \x2b0800 CST",
     "url" : "https:\/\/yk6.github.io\/2019\/setup\/",
-    "wordCount" : "456",
+    "wordCount" : "611",
     "keywords" : [ "gcp", "yk6`s Blog"]
 }
 </script>
@@ -144,14 +144,16 @@
           
           
 
-          
-
-<h1 id="setup-up-gcp">Setup up gcp</h1>
-
-<h3 id="沒特別標明的選項就是用default">沒特別標明的選項就是用default</h3>
-
+          <h1 id="setup-up-gcp">Setup up gcp</h1>
+<h3 id="default">沒特別標明的選項就是用default</h3>
 <ul>
+<li>google gcp
+<img src="/gcp_google.jpg" alt=""></li>
 <li>open gcp account</li>
+<li>去主控台
+<img src="/gcp_console.jpg" alt=""></li>
+<li>主控台
+<img src="/gcp_main_console.jpg" alt=""></li>
 <li>在Computer Engine 裡 創一個 <code>VM 執行個體</code></li>
 <li>建立VM 執行個體</li>
 <li>選個地方 (區域: 台灣/香港) &lt;&mdash;- 這是機房的位置 越近越不lag</li>
@@ -159,20 +161,17 @@
 <li>機器選個便宜的 大概選g1就可以 (1 vCPU, 1+ GB RAM)</li>
 <li><code>開機磁碟</code>選 <code>Ubuntu 16.04LTS</code></li>
 <li>在<code>管理、安全性、磁碟、網路、單獨租用</code>裡<code>網路</code>tab 裡，
-<br>網路介面的<code>外部IP</code>改成<code>建立IP地址</code> <br>(這是為了取得靜態IP地址 以後才能一直從這個IP連上SSR)</li>
+<!-- raw HTML omitted -->網路介面的<code>外部IP</code>改成<code>建立IP地址</code> <!-- raw HTML omitted -->(這是為了取得靜態IP地址 以後才能一直從這個IP連上SSR)</li>
 <li>然後 <strong>[建立]</strong></li>
 </ul>
-
 <h3 id="setup-vm">Setup VM</h3>
-
 <ul>
 <li>回到 <em>Computer Engine</em> 的 <em>VM 執行個體</em> 裡，開啟你的VM (default name instance1?)</li>
 <li>點 <code>SSH</code>
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/gcp_ssh_pic.jpg" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+<img src="/gcp_ssh_pic.jpg" alt=""></li>
 <li>接來跑下面的指令，一個一個來 中間可能會要等他跑一下才能打下一個</li>
 </ul>
-
-<pre><code class="language-bash">sudo -i
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo -i
 apt-get update
 apt-get upgrade
 apt install python-pip
@@ -181,32 +180,40 @@ wget https://github.com/hellofwy/ss-bash/archive/master.zip
 apt install unzip
 unzip master.zip
 ls
-# ls can show u the current files and folder in the directory u r in
+<span style="color:#75715e"># ls can show u the current files and folder in the directory u r in</span>
 cd ss-bash-master
-# cd moves u into a folder or goes up of current directory
+<span style="color:#75715e"># cd moves u into a folder or goes up of current directory</span>
 apt install bc
 ./ssadmin.sh
-# 看隨便要什麼cmd自己選 
-# 通常要先 add [自選port] [自選流量限制] 然後就可以用了
-# status 看開著還是關了
-# start 啟動 
-# stop 關掉
-</code></pre>
-
-<ul>
+<span style="color:#75715e"># 看隨便要什麼cmd自己選</span> 
+<span style="color:#75715e"># 通常要先 add [自選port] [自選流量限制] 然後就可以用了</span>
+<span style="color:#75715e"># status 看開著還是關了</span>
+<span style="color:#75715e"># start 啟動</span> 
+<span style="color:#75715e"># stop 關掉</span>
+</code></pre></div><ul>
 <li>further reading
-<a href="https://github.com/hellofwy/ss-bash/wiki" rel="nofollow noreferrer" target="_blank">https://github.com/hellofwy/ss-bash/wiki</a></li>
+<a href="https://github.com/hellofwy/ss-bash/wiki">https://github.com/hellofwy/ss-bash/wiki</a></li>
 </ul>
-
 <h3 id="setup-firewall">Setup firewall</h3>
-
 <ul>
 <li>在<code>VPC網路</code> 裡的 <code>防火牆規則</code> 加一個新的規則
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/gcp_ip.jpg" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+<img src="/gcp_ip.jpg" alt=""></li>
 <li>名字取個allow-ip 比較好懂</li>
 <li><code>目標</code> 選 <code>網路中的所有執行個體</code></li>
 <li><code>來源IP範圍</code> 選 <code>0.0.0.0/0</code></li>
 <li><code>通訊協定和通訊埠</code> 選 <code>全部允許</code></li>
+</ul>
+<h3 id="compute-engineip">改compute engine綁定的IP</h3>
+<ul>
+<li>去VPC網路裡的<code>外部IP位址</code>
+<img src="/gcp_VPC_vm.jpg" alt=""></li>
+<li>按<code>變更</code></li>
+<li>把附加在現在這個instance上的位址給換成「無」 這樣他會重新分配一個暫時的靜態位址這個instance</li>
+<li>然後現在在你持有的位址裡就會有兩個 一個是給你的instance 另一個沒東西在使用他</li>
+<li>把舊的位址給釋放掉
+<img src="/gcp_release_ip.jpg" alt=""></li>
+<li>將新的改為靜態
+<img src="/gcp_VPC_assign_static.jpg" alt=""></li>
 </ul>
 
     </div>
