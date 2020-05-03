@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OS transfer on yk6`s Blog</title>
+    <link>https://yk6.github.io/tags/os-transfer/</link>
+    <description>Recent content in OS transfer on yk6`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 30 Dec 2019 02:13:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://yk6.github.io/tags/os-transfer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>transfer OS to new ssd/hdd</title>
+      <link>https://yk6.github.io/2019/os_transfer/</link>
+      <pubDate>Mon, 30 Dec 2019 02:13:59 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2019/os_transfer/</guid>
+      <description>How to transfer OS from 1 computer to another  Prepare empty HDD/SSD Download https://tw.easeus.com/backup-recovery/migrate-windows-10-to-ssd.html Follow instruction in step 2 HDD/SSD must be bigger than actual physical size of disk that is being replicated  eg. ur physical disk is splited into C drive(512G) and D drive(512G) then a HDD/SSD of 1T is required even though C and D drive is virtually different or you can delete D drive (delete volumn/partition) via disk manager in Windows giving a 512G of C drive and unallocated 512G of nothing   Perform actual copying action Boot with new disk and check window is working fine If you want to reset Windows, check that all user content you wish to preserve is copied out  else, after resetting, new user may not access the folders as it have no permission granted as the the permission still belongs to the original user(the one before you reset)   If step 7 is done but files are not accessible, read up on  https://answers.</description>
+    </item>
+    
+  </channel>
+</rss>

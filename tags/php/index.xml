@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on yk6`s Blog</title>
+    <link>https://yk6.github.io/tags/php/</link>
+    <description>Recent content in php on yk6`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 30 Dec 2019 02:13:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://yk6.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>php page</title>
+      <link>https://yk6.github.io/2019/php_page/</link>
+      <pubDate>Mon, 30 Dec 2019 02:13:59 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2019/php_page/</guid>
+      <description>How to run php script it may contain .php, .ini, .css to start with
+ download xampp put folder with php under htdocs at path ../xampp/htdocs/ur_folder open control panel and start apache and mysql find the php at localhost/ur_folder_name  </description>
+    </item>
+    
+  </channel>
+</rss>

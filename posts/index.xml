@@ -6,10 +6,29 @@
     <description>Recent content in Posts on yk6`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 09 Nov 2019 15:50:12 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 02:13:59 +0800</lastBuildDate>
     
 	<atom:link href="https://yk6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>php page</title>
+      <link>https://yk6.github.io/2019/php_page/</link>
+      <pubDate>Mon, 30 Dec 2019 02:13:59 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2019/php_page/</guid>
+      <description>How to run php script it may contain .php, .ini, .css to start with
+ download xampp put folder with php under htdocs at path ../xampp/htdocs/ur_folder open control panel and start apache and mysql find the php at localhost/ur_folder_name  </description>
+    </item>
+    
+    <item>
+      <title>transfer OS to new ssd/hdd</title>
+      <link>https://yk6.github.io/2019/os_transfer/</link>
+      <pubDate>Mon, 30 Dec 2019 02:13:59 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2019/os_transfer/</guid>
+      <description>How to transfer OS from 1 computer to another  Prepare empty HDD/SSD Download https://tw.easeus.com/backup-recovery/migrate-windows-10-to-ssd.html Follow instruction in step 2 HDD/SSD must be bigger than actual physical size of disk that is being replicated  eg. ur physical disk is splited into C drive(512G) and D drive(512G) then a HDD/SSD of 1T is required even though C and D drive is virtually different or you can delete D drive (delete volumn/partition) via disk manager in Windows giving a 512G of C drive and unallocated 512G of nothing   Perform actual copying action Boot with new disk and check window is working fine If you want to reset Windows, check that all user content you wish to preserve is copied out  else, after resetting, new user may not access the folders as it have no permission granted as the the permission still belongs to the original user(the one before you reset)   If step 7 is done but files are not accessible, read up on  https://answers.</description>
+    </item>
     
     <item>
       <title>Setup SSR</title>
@@ -26,7 +45,7 @@
       <pubDate>Wed, 22 May 2019 22:28:07 +0800</pubDate>
       
       <guid>https://yk6.github.io/2019/hugo/</guid>
-      <description>Hugo how to create new page $ ~/Desktop/webpg/ hugo new [page_name].md reference https://mogeko.me/2018/018/ - draft 要改成false才會publish to public - 每次回到根目錄用 ```hugo``` 來輸出新的靜態頁面到```/public``` 字數統</description>
+      <description>Hugo My folder structure . ├── blog └── resources how to create new page $ ./blog hugo new [page_name].md start server $ ./blog hugo server push public files $ ./blog/public git... reference https://mogeko.me/2018/018/ draft 要改成false才會publish to public 每次回到根目錄./blog</description>
     </item>
     
     <item>
@@ -35,7 +54,7 @@
       <pubDate>Wed, 22 May 2019 22:08:41 +0800</pubDate>
       
       <guid>https://yk6.github.io/2019/line_sticker/</guid>
-      <description>下載line 貼圖 https://sdl-stickershop.line.naver.jp/stickershop/v1/product/[</description>
+      <description>下載line 貼圖 靜態 https://sdl-stickershop.line.naver.jp/stickershop/v1/product</description>
     </item>
     
     <item>
@@ -44,8 +63,13 @@
       <pubDate>Wed, 22 May 2019 22:01:30 +0800</pubDate>
       
       <guid>https://yk6.github.io/2019/markdown/</guid>
-      <description>markdown H2 H3 H6  this is a quote
- quote with formatting    list unordered  more details https://markdown.tw/</description>
+      <description>markdown H2 H3 H6 My Great Heading  this is a quote
+ quote with formatting    list unordered  &amp;amp;nbps;
+bold
+italicized text
+ blockquote
+ title
+more details https://markdown.tw/ https://www.markdownguide.org/cheat-sheet/</description>
     </item>
     
   </channel>

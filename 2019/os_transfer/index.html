@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="https://yk6.github.io/2019/line_sticker/" />
-  <link rel="next" href="https://yk6.github.io/2019/setup/" />
-  <link rel="canonical" href="https://yk6.github.io/2019/hugo/" />
+  <link rel="prev" href="https://yk6.github.io/2019/setup/" />
+  <link rel="next" href="https://yk6.github.io/2019/php_page/" />
+  <link rel="canonical" href="https://yk6.github.io/2019/os_transfer/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Hugo | yk6`s Blog
+           transfer OS to new ssd/hdd | yk6`s Blog
        
   </title>
-  <meta name="title" content="Hugo | yk6`s Blog">
+  <meta name="title" content="transfer OS to new ssd/hdd | yk6`s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/yk6.github.io"
     },
     "articleSection" : "posts",
-    "name" : "Hugo",
-    "headline" : "Hugo",
-    "description" : "Hugo My folder structure . ├── blog └── resources how to create new page $ .\/blog hugo new [page_name].md start server $ .\/blog hugo server push public files $ .\/blog\/public git... reference https:\/\/mogeko.me\/2018\/018\/ draft 要改成false才會publish to public 每次回到根目錄.\/blog",
+    "name" : "transfer OS to new ssd\/hdd",
+    "headline" : "transfer OS to new ssd\/hdd",
+    "description" : "How to transfer OS from 1 computer to another  Prepare empty HDD\/SSD Download https:\/\/tw.easeus.com\/backup-recovery\/migrate-windows-10-to-ssd.html Follow instruction in step 2 HDD\/SSD must be bigger than actual physical size of disk that is being replicated  eg. ur physical disk is splited into C drive(512G) and D drive(512G) then a HDD\/SSD of 1T is required even though C and D drive is virtually different or you can delete D drive (delete volumn\/partition) via disk manager in Windows giving a 512G of C drive and unallocated 512G of nothing   Perform actual copying action Boot with new disk and check window is working fine If you want to reset Windows, check that all user content you wish to preserve is copied out  else, after resetting, new user may not access the folders as it have no permission granted as the the permission still belongs to the original user(the one before you reset)   If step 7 is done but files are not accessible, read up on  https:\/\/answers.",
     "inLanguage" : "zh-tw",
     "author" : "yk6",
     "creator" : "yk6",
@@ -54,11 +54,11 @@
     "accountablePerson" : "yk6",
     "copyrightHolder" : "yk6",
     "copyrightYear" : "2019",
-    "datePublished": "2019-05-22 22:28:07 \x2b0800 CST",
-    "dateModified" : "2019-05-22 22:28:07 \x2b0800 CST",
-    "url" : "https:\/\/yk6.github.io\/2019\/hugo\/",
-    "wordCount" : "94",
-    "keywords" : [  "yk6`s Blog"]
+    "datePublished": "2019-12-30 02:13:59 \x2b0800 CST",
+    "dateModified" : "2019-12-30 02:13:59 \x2b0800 CST",
+    "url" : "https:\/\/yk6.github.io\/2019\/os_transfer\/",
+    "wordCount" : "161",
+    "keywords" : [ "OS transfer", "yk6`s Blog"]
 }
 </script>
 
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hugo</h1>
+        <h1 class="post-title" itemprop="name headline">transfer OS to new ssd/hdd</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://yk6.github.io" rel="author">yk6</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-05-22 itemprop="datePublished">May 22, 2019</time>
+                on <time datetime=2019-12-30 itemprop="datePublished">December 30, 2019</time>
                 </span>
                 in
                 
@@ -142,23 +142,31 @@
           
           
 
-          <h1 id="hugo">Hugo</h1>
-<p>My folder structure</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.
-├── blog
-└── resources
-</code></pre></div><h2 id="how-to-create-new-page">how to create new page</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./blog hugo new <span style="color:#f92672">[</span>page_name<span style="color:#f92672">]</span>.md 
-</code></pre></div><h2 id="start-server">start server</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./blog hugo server
-</code></pre></div><h2 id="push-public-files">push public files</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./blog/public git...
-</code></pre></div><p>reference <a href="https://mogeko.me/2018/018/">https://mogeko.me/2018/018/</a></p>
+          <h1 id="how-to-transfer-os-from-1-computer-to-another">How to transfer OS from 1 computer to another</h1>
+<!-- raw HTML omitted -->
+<ol>
+<li>Prepare empty HDD/SSD</li>
+<li>Download <a href="https://tw.easeus.com/backup-recovery/migrate-windows-10-to-ssd.html">https://tw.easeus.com/backup-recovery/migrate-windows-10-to-ssd.html</a></li>
+<li>Follow instruction in step 2</li>
+<li>HDD/SSD must be <em><strong>bigger</strong></em> than actual physical size of disk that is being replicated
 <ul>
-<li>draft 要改成false才會publish to public</li>
-<li>每次回到根目錄<code>./blog</code>用 <code>hugo</code> 來輸出新的靜態頁面到<code>/public</code></li>
+<li>eg. ur physical disk is splited into C drive(512G) and D drive(512G)</li>
+<li>then a HDD/SSD of 1T is required even though C and D drive is virtually different</li>
+<li>or you can delete D drive (delete volumn/partition) via disk manager in Windows</li>
+<li>giving a 512G of C drive and unallocated 512G of nothing</li>
 </ul>
-<p>字數統計 <a href="https://mogeko.me/2018/033/">https://mogeko.me/2018/033/</a></p>
+</li>
+<li>Perform actual copying action</li>
+<li>Boot with new disk and check window is working fine</li>
+<li>If you want to reset Windows, check that all user content you wish to preserve is copied out
+<ul>
+<li>else, after resetting, new user may not access the folders as it have no permission granted</li>
+<li>as the the permission still belongs to the original user(the one before you reset)</li>
+</ul>
+</li>
+<li>If step 7 is done but files are not accessible, read up on</li>
+</ol>
+<p><a href="https://answers.microsoft.com/zh-hant/windows/forum/all/%E6%B2%92%E6%9C%89%E6%AC%8A%E9%99%90%E5%8F%96/479befbc-5a15-4a7c-9e7d-55baeb3e44b6">https://answers.microsoft.com/zh-hant/windows/forum/all/%E6%B2%92%E6%9C%89%E6%AC%8A%E9%99%90%E5%8F%96/479befbc-5a15-4a7c-9e7d-55baeb3e44b6</a></p>
 
     </div>
 
@@ -173,7 +181,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://yk6.github.io/2019/hugo/>https://yk6.github.io/2019/hugo/</span>
+                    <a href=https://yk6.github.io/2019/os_transfer/>https://yk6.github.io/2019/os_transfer/</span>
             </p>
             
              
@@ -186,6 +194,14 @@
   
     <div class="post-tags">
         
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://yk6.github.io/tags/os-transfer/">
+                    #OS transfer</a></span>
+            
+            </section>
+        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://yk6.github.io">home</a></span>
@@ -194,10 +210,10 @@
 
     <div class="post-nav">
         
-        <a href="https://yk6.github.io/2019/line_sticker/" class="prev" rel="prev" title="Line Sticker"><i class="iconfont icon-left"></i>&nbsp;Line Sticker</a>
+        <a href="https://yk6.github.io/2019/setup/" class="prev" rel="prev" title="Setup SSR"><i class="iconfont icon-left"></i>&nbsp;Setup SSR</a>
          
         
-        <a href="https://yk6.github.io/2019/setup/" class="next" rel="next" title="Setup SSR">Setup SSR&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://yk6.github.io/2019/php_page/" class="next" rel="next" title="php page">php page&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
