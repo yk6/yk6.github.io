@@ -6,10 +6,23 @@
     <description>Recent content in Posts on yk6`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 12 Apr 2020 20:15:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2020 22:36:49 +0800</lastBuildDate>
     
 	<atom:link href="https://yk6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Website Design Resource</title>
+      <link>https://yk6.github.io/2020/website_design/</link>
+      <pubDate>Mon, 15 Jun 2020 22:36:49 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2020/website_design/</guid>
+      <description>Useful weblink for website design https://nodesign.dev/
+ Contains many UI tool and design resources  eg. Arts, Pictures, Fonts, CSS, Color, Generators, Icons, Inspiration, Video    https://www.fontfabric.com/
+ Different style of font free for use  https://www.flaticon.com/
+ Free icon database library in a range of formats(png,svg,eps,psd)  https://www.favicon-generator.org/
+ Converter for Image(png,jpg,gif) to favicon format  </description>
+    </item>
     
     <item>
       <title>transfer OS to new ssd/hdd</title>
