@@ -6,10 +6,22 @@
     <description>Recent content in Posts on yk6`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 20 Jul 2021 23:52:51 +0800</lastBuildDate>
-    
-	<atom:link href="https://yk6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sat, 07 Aug 2021 15:38:18 +0800</lastBuildDate><atom:link href="https://yk6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Youtube</title>
+      <link>https://yk6.github.io/2021/youtube/</link>
+      <pubDate>Sat, 07 Aug 2021 15:38:18 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2021/youtube/</guid>
+      <description>Download to download video from youtube, the following packages can be used
+  youtube-dl
+https://github.com/ytdl-org/youtube-dl
+package can be obtained by
+$ pip3 install youtube-dl   streamlink
+https://streamlink.github.io/
+package can be obtained by
+$ pip3 install streamlink   Usually I use youtube-dl for downloading post-stream video, and streamlink to record livestream. Youtube-dl also supports passing in of user cookie to get access to member only content for channels.</description>
+    </item>
     
     <item>
       <title>Minecraft MOD</title>
