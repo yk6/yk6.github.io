@@ -6,7 +6,16 @@
     <description>Recent content in Posts on yk6`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 07 Aug 2021 15:38:18 +0800</lastBuildDate><atom:link href="https://yk6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Oct 2021 03:25:56 +0800</lastBuildDate><atom:link href="https://yk6.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSL2 Ubuntu distro upgrade</title>
+      <link>https://yk6.github.io/2021/wsl2_ubuntu_upgrade/</link>
+      <pubDate>Sat, 09 Oct 2021 03:25:56 +0800</pubDate>
+      
+      <guid>https://yk6.github.io/2021/wsl2_ubuntu_upgrade/</guid>
+      <description>Upgrade WSL2 Ubuntu OS  Upgrade all packages to latest version  sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade Install update manager  sudo apt-get install update-manager-core Set Prompt value in /etc/update-manager/release-upgrades to select between lts or normal release Remove snapd by the follow cmd, (solution source)  sudo apt remove snapd Perform the upgrade, add -d option for getting the latest experiment release  sudo do-release-upgrade After completing, confirm the release version  lsb_release -a </description>
+    </item>
+    
     <item>
       <title>Youtube</title>
       <link>https://yk6.github.io/2021/youtube/</link>
@@ -103,7 +112,7 @@ bold
 italicized text
  blockquote
  title
-more details https://markdown.tw/ https://www.markdownguide.org/cheat-sheet/</description>
+more details https://markdown.tw/ https://www.markdownguide.org/cheat-sheet/ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</description>
     </item>
     
   </channel>

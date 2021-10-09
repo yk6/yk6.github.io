@@ -9,9 +9,9 @@
   
   
   
+  <link rel="prev" href="https://yk6.github.io/2021/youtube/" />
   
-  <link rel="next" href="https://yk6.github.io/2019/line_sticker/" />
-  <link rel="canonical" href="https://yk6.github.io/2019/markdown/" />
+  <link rel="canonical" href="https://yk6.github.io/2021/wsl2_ubuntu_upgrade/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           markdown | yk6`s Blog
+           WSL2 Ubuntu distro upgrade | yk6`s Blog
        
   </title>
-  <meta name="title" content="markdown | yk6`s Blog">
+  <meta name="title" content="WSL2 Ubuntu distro upgrade | yk6`s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,20 +44,20 @@
          "@id": "https:\/\/yk6.github.io"
     },
     "articleSection" : "posts",
-    "name" : "markdown",
-    "headline" : "markdown",
-    "description" : "markdown H2 H3 H6 My Great Heading  this is a quote\n quote with formatting    list unordered  \u0026amp;nbps;\nbold\nitalicized text\n blockquote\n title\nmore details https:\/\/markdown.tw\/ https:\/\/www.markdownguide.org\/cheat-sheet\/ https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Markdown-Cheatsheet",
+    "name" : "WSL2 Ubuntu distro upgrade",
+    "headline" : "WSL2 Ubuntu distro upgrade",
+    "description" : "Upgrade WSL2 Ubuntu OS  Upgrade all packages to latest version  sudo apt-get update \u0026amp;\u0026amp; sudo apt-get upgrade Install update manager  sudo apt-get install update-manager-core Set Prompt value in \/etc\/update-manager\/release-upgrades to select between lts or normal release Remove snapd by the follow cmd, (solution source)  sudo apt remove snapd Perform the upgrade, add -d option for getting the latest experiment release  sudo do-release-upgrade After completing, confirm the release version  lsb_release -a ",
     "inLanguage" : "zh-tw",
     "author" : "yk6",
     "creator" : "yk6",
     "publisher": "yk6",
     "accountablePerson" : "yk6",
     "copyrightHolder" : "yk6",
-    "copyrightYear" : "2019",
-    "datePublished": "2019-05-22 22:01:30 \u002b0800 CST",
-    "dateModified" : "2019-05-22 22:01:30 \u002b0800 CST",
-    "url" : "https:\/\/yk6.github.io\/2019\/markdown\/",
-    "wordCount" : "27",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-10-09 03:25:56 \u002b0800 CST",
+    "dateModified" : "2021-10-09 03:25:56 \u002b0800 CST",
+    "url" : "https:\/\/yk6.github.io\/2021\/wsl2_ubuntu_upgrade\/",
+    "wordCount" : "70",
     "keywords" : [  "yk6`s Blog"]
 }
 </script>
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">markdown</h1>
+        <h1 class="post-title" itemprop="name headline">WSL2 Ubuntu distro upgrade</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://yk6.github.io" rel="author">yk6</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-05-22 itemprop="datePublished">May 22, 2019</time>
+                on <time datetime=2021-10-09 itemprop="datePublished">October 9, 2021</time>
                 </span>
                 in
                 
@@ -129,8 +129,6 @@
     <div class="post-content">
         
 
-        
-            
         
 
         
@@ -144,35 +142,29 @@
           
           
 
-          <h1 id="markdown">markdown</h1>
-<h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<h6 id="h6">H6</h6>
-<h3 id="custom-id">My Great Heading</h3>
-<blockquote>
-<p>this is a quote</p>
+          <h3 id="upgrade-wsl2-ubuntu-os">Upgrade WSL2 Ubuntu OS</h3>
 <ol>
-<li>quote with formatting</li>
+<li>Upgrade all packages to latest version</li>
 </ol>
-</blockquote>
-<ul>
-<li>list</li>
-<li>unordered</li>
-</ul>
-<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
-<p>&amp;nbps;</p>
-<p><strong>bold</strong></p>
-<p><em>italicized text</em></p>
-<blockquote>
-<p>blockquote</p>
-</blockquote>
-<p><a href="https://www.example.com">title</a></p>
-<p><img src="image.jpg" alt="alt text"></p>
-<h1 id="more-details">more details</h1>
-<p><a href="https://markdown.tw/">https://markdown.tw/</a>
-<a href="https://www.markdownguide.org/cheat-sheet/">https://www.markdownguide.org/cheat-sheet/</a>
-<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></p>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update <span style="color:#f92672">&amp;&amp;</span> sudo apt-get upgrade
+</code></pre></div><ol start="2">
+<li>Install update manager</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install update-manager-core 
+</code></pre></div><ol start="3">
+<li>Set Prompt value in <code>/etc/update-manager/release-upgrades</code> to select between lts or normal release</li>
+<li>Remove snapd by the follow cmd, (<a href="https://github.com/microsoft/WSL/issues/6942#issuecomment-847284637">solution source</a>)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt remove snapd
+</code></pre></div><ol start="5">
+<li>Perform the upgrade, add <code>-d</code> option for getting the latest experiment release</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo <span style="color:#66d9ef">do</span>-release-upgrade
+</code></pre></div><ol start="6">
+<li>After completing, confirm the release version</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lsb_release -a
+</code></pre></div>
     </div>
 
     <div class="post-copyright">
@@ -186,7 +178,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://yk6.github.io/2019/markdown/>https://yk6.github.io/2019/markdown/</span>
+                    <a href=https://yk6.github.io/2021/wsl2_ubuntu_upgrade/>https://yk6.github.io/2021/wsl2_ubuntu_upgrade/</span>
             </p>
             
              
@@ -206,9 +198,9 @@
     </div>
 
     <div class="post-nav">
-         
         
-        <a href="https://yk6.github.io/2019/line_sticker/" class="next" rel="next" title="Line Sticker">Line Sticker&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://yk6.github.io/2021/youtube/" class="prev" rel="prev" title="Youtube"><i class="iconfont icon-left"></i>&nbsp;Youtube</a>
+         
         
     </div>
 
@@ -250,9 +242,8 @@
 
 
     
-     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
   
 
